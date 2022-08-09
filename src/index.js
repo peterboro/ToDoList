@@ -9,7 +9,7 @@ const todo = [
 const todoList = () => {
   let todoListContent = '';
   todo.forEach((item) => {
-    todoListContent += `<li class="task"><input class="task-check" type="checkbox"><span class="list">${item.description}</span><i class='fa fa-ellipsis-v' style="float: right;"></i></li>`;
+    todoListContent += `<li class="task"><input class="task-check" type="checkbox"><span class="list">${item.description}</span><i class='fa fa-ellipsis-v' style="margin-left: auto"></i></li>`;
   });
   document.querySelector('.task-box').innerHTML = todoListContent;
 };

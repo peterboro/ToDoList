@@ -5,7 +5,11 @@
   font-family: 'Poppins', sans-serif;
 } */
 body {
-  background: rgb(222, 211, 211);
+  /* background: rgb(222, 211, 211); */
+  background: whitesmoke;
+}
+
+section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,6 +56,12 @@ h2 {
   font-size: medium;
 }
 
+.task {
+  display: flex;
+  padding: 3%;
+  background-color: white;
+}
+
 .task-input {
   width: 100%;
   margin-bottom: 1px;
@@ -86,8 +96,8 @@ input::placeholder {
 
 .list {
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
 }
 
 .clear-container {
