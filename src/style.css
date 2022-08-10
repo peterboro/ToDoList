@@ -62,10 +62,12 @@ h2 {
   background-color: white;
 }
 
-.task-input {
-  width: 100%;
+#task-input {
+  /* width: 100%;
   margin-bottom: 1px;
-  background-color: white;
+  background-color: white; */
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .task-box {
@@ -78,6 +80,12 @@ h2 {
   row-gap: 2px;
 }
 
+.input-icon {
+  width: 100%;
+  margin-bottom: 1px;
+  background-color: white;
+}
+
 .todo-text {
   width: 85%;
   border: none;
@@ -88,6 +96,42 @@ h2 {
 
 input::placeholder {
   font-style: italic;
+}
+
+#taskSubmit {
+  font-size: 16px;
+  width: 20%;
+  background-color: white;
+  margin: 0;
+  cursor: pointer;
+  padding-left: 10%;
+}
+
+.drag {
+  margin-left: 8px;
+  cursor: move;
+  color: gray;
+  font-size: 18px;
+}
+
+.drag:active {
+  cursor: grabbing;
+}
+
+.task-text {
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.task-text:focus {
+  outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
 }
 
 .task-check {

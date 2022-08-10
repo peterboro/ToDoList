@@ -18,10 +18,12 @@
       </header>
       <div class="wrapper-container">
         <h2>Today's To Do<i class="fas fa-sync icon1"></i></h2>
-        <div class="task-input">
+        <form id="task-input" action="POST" class="input-icon">
           <input type="text" id="description" class="todo-text" placeholder="Add to your list">
-          <i class="fas fa-plus-square icon"></i>
-        </div>
+          <button id="taskSubmit" type="submit">
+            <i class="fas fa-plus-square icon"></i>
+          </button>
+        </form>
         <ul class="task-box">
         
         </ul>
