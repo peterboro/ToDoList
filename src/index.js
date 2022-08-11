@@ -64,7 +64,7 @@ document.querySelector('#task-input').addEventListener('submit', (event) => {
   task.add(lists);
   todoList();
 });
-document.querySelector('.clear-container').addEventListener('click', () => {
+document.querySelector('.clear-btn').addEventListener('click', () => {
   task.removeDone(lists);
   todoList();
 });
